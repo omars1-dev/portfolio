@@ -157,8 +157,21 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    direction: rtl;
+  }
   body {
     @apply bg-background text-foreground;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    font-weight: 700;
+  }
+  p, span, div {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -387,5 +400,30 @@
   /* Smooth transitions */
   .transition-elegant {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* RTL-specific utilities */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .ltr {
+    direction: ltr;
+    text-align: left;
+  }
+  
+  /* Margin and padding utilities for RTL */
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  
+  .me-auto {
+    margin-inline-end: auto;
+  }
+  
+  /* Flexbox utilities for RTL */
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
 }
