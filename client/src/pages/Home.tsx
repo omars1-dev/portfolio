@@ -4,6 +4,8 @@ import { Navigation } from "@/components/Navigation";
 import { SkillBar } from "@/components/SkillBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { ContactForm } from "@/components/ContactForm";
+import { AboutSection } from "@/components/AboutSection";
+import { SkillsWithIcons } from "@/components/SkillsWithIcons";
 import {
   Github,
   Linkedin,
@@ -30,33 +32,6 @@ import {
  */
 
 export default function Home() {
-  const skills = [
-    { category: "لغات البرمجة", items: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "JavaScript", level: 85 },
-      { name: "PHP", level: 80 },
-      { name: "C#", level: 75 },
-      { name: "Python", level: 70 },
-    ]},
-    { category: "أطر العمل والمكتبات", items: [
-      { name: "Bootstrap", level: 90 },
-      { name: "Tailwind CSS", level: 80 },
-      { name: "React.js", level: 70 },
-      { name: "Laravel", level: 65 },
-    ]},
-    { category: "قواعد البيانات", items: [
-      { name: "MySQL", level: 85 },
-      { name: "SQLite", level: 70 },
-    ]},
-    { category: "أدوات المطور", items: [
-      { name: "Git & GitHub", level: 90 },
-      { name: "VS Code", level: 95 },
-      { name: "Docker", level: 50 },
-      { name: "Figma", level: 75 },
-    ]},
-  ];
-
   const projects = [
     {
       title: "نظام إدارة المهام",
@@ -117,8 +92,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-white/80 dark:bg-slate-900/80"></div>
         <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in-up">
           <div className="mb-8">
-            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 border-4 border-blue-600 flex items-center justify-center shadow-elegant-lg animate-float">
-              <span className="text-5xl">👨‍💻</span>
+            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 border-4 border-blue-600 flex items-center justify-center shadow-elegant-lg animate-float overflow-hidden">
+              <img
+                src="/manus-storage/1000137522_623d01ba.png"
+                alt="عمر الزمر"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
@@ -168,6 +147,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <AboutSection
+        profileImage="/manus-storage/1000137522_623d01ba.png"
+        universityLogo="/manus-storage/1000137523_9441093c.png"
+      />
+
       {/* Education Section */}
       <section id="education" className="py-20 bg-gradient-to-b from-white dark:from-slate-900 to-slate-50 dark:to-slate-800">
         <div className="container mx-auto px-4">
@@ -176,8 +161,12 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-elegant-lg transition-all duration-300 animate-fade-in-up dark:bg-slate-800 dark:border-l-blue-400">
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">🎓</span>
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <img
+                    src="/manus-storage/1000137523_9441093c.png"
+                    alt="جامعة إب"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">جامعة إب</h3>
@@ -222,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills Section with Icons */}
       <section
         id="skills"
         className="py-20 bg-white dark:bg-slate-900 relative overflow-hidden"
@@ -237,30 +226,10 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center">المهارات التقنية</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {skills.map((skillGroup, idx) => (
-              <div key={idx} className="animate-fade-in-up" style={{ animationDelay: `${idx * 100}ms` }}>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-                  <div className="w-1 h-6 bg-gradient-to-b from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 rounded"></div>
-                  {skillGroup.category}
-                </h3>
-                
-                <div className="space-y-4">
-                  {skillGroup.items.map((skill, skillIdx) => (
-                    <SkillBar
-                      key={skillIdx}
-                      name={skill.name}
-                      level={skill.level}
-                      delay={skillIdx * 50}
-                    />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <SkillsWithIcons />
 
           {/* Soft Skills */}
-          <div className="mt-12">
+          <div className="mt-16">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">المهارات الشخصية</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {softSkills.map((skill, idx) => {
