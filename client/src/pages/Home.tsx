@@ -20,6 +20,10 @@ import {
   Zap,
   Facebook,
   ArrowDown,
+  Cpu,
+  Gamepad2,
+  ShoppingCart,
+  BarChart3,
 } from "lucide-react";
 
 /**
@@ -34,32 +38,54 @@ import {
 export default function Home() {
   const projects = [
     {
-      title: "نظام إدارة المهام",
-      description: "تطبيق ويب لإدارة المهام اليومية مع نظام تسجيل دخول كامل",
-      technologies: ["PHP", "MySQL", "Bootstrap"],
-      github: "#",
-      demo: "#",
+      title: "تصنيف الأغذية بالذكاء الاصطناعي",
+      description: "نموذج NLP متقدم يستخدم DistilBERT لتصنيف المنتجات الغذائية من قائمة المكونات بدقة 87%",
+      shortDesc: "تصنيف ذكي للمنتجات الغذائية باستخدام NLP",
+      technologies: ["Python", "NLP", "DistilBERT", "Hugging Face"],
+      github: "https://github.com/omars1-dev/food-classification-nlp",
+      demo: "https://huggingface.co/omars1-dev/food-classification-nlp",
+      icon: Cpu,
+      color: "from-purple-500 to-pink-500",
     },
     {
-      title: "مدونة تقنية",
-      description: "منصة تدوين بسيطة تدعم نظام CRUD للمقالات",
-      technologies: ["Laravel", "Tailwind CSS", "SQLite"],
-      github: "#",
-      demo: "#",
+      title: "نظام الاستنتاج المنظوري العصبي",
+      description: "نموذج ذكاء اصطناعي يولد مناظر ثلاثية الأبعاد لجسم بشري من صورة واحدة باستخدام Conditioned U-Net",
+      shortDesc: "توليد مناظر ثلاثية الأبعاد من صورة واحدة",
+      technologies: ["Python", "Deep Learning", "Computer Vision", "Hugging Face"],
+      github: "https://github.com/omars1-dev/Neural-Pose-Interpreter",
+      demo: "https://huggingface.co/omars1-dev/neural-pose-interpreter",
+      icon: Palette,
+      color: "from-blue-500 to-cyan-500",
     },
     {
-      title: "متجر إلكتروني مصغر",
-      description: "واجهة متجر إلكتروني مع سلة مشتريات باستخدام JavaScript",
-      technologies: ["React.js", "Context API", "Firebase"],
-      github: "#",
-      demo: "#",
+      title: "حراج الإلكترونيات",
+      description: "منصة إعلانات تفاعلية لبيع وشراء الأجهزة الإلكترونية المستعملة مع تخزين محلي للبيانات",
+      shortDesc: "منصة إعلانات للأجهزة الإلكترونية المستعملة",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
+      github: "https://github.com/omars1-dev/Hrag",
+      demo: "https://omars1-dev.github.io/Hrag",
+      icon: ShoppingCart,
+      color: "from-green-500 to-emerald-500",
     },
     {
-      title: "لوحة تحكم إدارية",
-      description: "تصميم وبرمجة واجهة خلفية لإدارة المحتوى",
-      technologies: ["React", "Tailwind CSS", "Node.js"],
-      github: "#",
+      title: "لعبة Omar Al-Zomor",
+      description: "لعبة ثنائية الأبعاد مشوقة بلغة C++ مع نظام تصادم متقدم وصعوبة متدرجة ديناميكياً",
+      shortDesc: "لعبة ثنائية الأبعاد بـ C++ مع رسوميات متقدمة",
+      technologies: ["C++", "BGI Graphics", "Collision Detection"],
+      github: "https://github.com/omars1-dev/Omar-Alzomor-Game",
       demo: "#",
+      icon: Gamepad2,
+      color: "from-orange-500 to-red-500",
+    },
+    {
+      title: "تحليل نظام إدارة الفندق",
+      description: "تحليل شامل لنظام فندق حقيقي يتضمن DFD و ERD واقتراحات تحسين الأداء والأمان",
+      shortDesc: "تحليل نظام فندق مع مخططات احترافية",
+      technologies: ["System Analysis", "DFD", "ERD", "Database Design"],
+      github: "https://github.com/omars1-dev/hotel-management-system-analysis",
+      demo: "#",
+      icon: BarChart3,
+      color: "from-indigo-500 to-purple-500",
     },
   ];
 
@@ -109,7 +135,7 @@ export default function Home() {
           </h2>
           
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            خريج جامعة إب - كلية العلوم والحاسوب، متخصص في تقنية المعلومات مع خبرة عملية في تطوير تطبيقات الويب الحديثة والأنظمة الإدارية
+            خريج جامعة إب - كلية الحاسبات والعلوم التطبيقية، متخصص في تقنية المعلومات مع خبرة عملية في تطوير تطبيقات الويب الحديثة والأنظمة الذكية
           </p>
           
           <div className="flex items-center justify-center gap-2 text-slate-600 dark:text-slate-300 mb-8">
@@ -122,7 +148,7 @@ export default function Home() {
               <Mail className="w-5 h-5" />
               تواصل معي
             </a>
-            <a href="https://github.com/omaralzomor2030-eng" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 font-semibold">
+            <a href="https://github.com/omars1-dev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 font-semibold">
               <Github className="w-5 h-5" />
               GitHub
             </a>
@@ -170,16 +196,13 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white">جامعة إب</h3>
-                  <p className="text-blue-600 dark:text-blue-400 font-semibold">كلية العلوم والحاسوب</p>
+                  <p className="text-blue-600 dark:text-blue-400 font-semibold">كلية الحاسبات والعلوم التطبيقية</p>
                 </div>
               </div>
               
               <div className="mb-6">
                 <p className="text-slate-600 dark:text-slate-300 mb-2">
                   <strong>التخصص:</strong> بكالوريوس تقنية معلومات
-                </p>
-                <p className="text-slate-600 dark:text-slate-300">
-                  <strong>سنة التخرج المتوقعة:</strong> 2027
                 </p>
               </div>
               
@@ -266,48 +289,67 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center">المشاريع</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.map((project, idx) => (
-              <Card
-                key={idx}
-                className="overflow-hidden hover:shadow-elegant-xl transition-all duration-300 animate-fade-in-up dark:bg-slate-800 dark:border-slate-700 group"
-                style={{ animationDelay: `${idx * 100}ms` }}
-              >
-                <div className="h-1 bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 group-hover:h-2 transition-all duration-300"></div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
-                  <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech, techIdx) => (
-                      <span
-                        key={techIdx}
-                        className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-sm font-medium hover:shadow-elegant transition-all duration-300"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, idx) => {
+              const Icon = project.icon;
+              return (
+                <Card
+                  key={idx}
+                  className="overflow-hidden hover:shadow-elegant-xl transition-all duration-300 animate-fade-in-up dark:bg-slate-800 dark:border-slate-700 group flex flex-col h-full"
+                  style={{ animationDelay: `${idx * 100}ms` }}
+                >
+                  {/* Header with Icon and Gradient */}
+                  <div className={`bg-gradient-to-r ${project.color} p-6 flex items-center justify-between text-white group-hover:scale-105 transition-transform duration-300`}>
+                    <div>
+                      <h3 className="text-xl font-bold mb-1">{project.title}</h3>
+                      <p className="text-sm opacity-90">{project.shortDesc}</p>
+                    </div>
+                    <Icon className="w-12 h-12 opacity-80 flex-shrink-0" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 flex-grow flex flex-col">
+                    <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed flex-grow line-clamp-2">
+                      {project.description}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.technologies.map((tech, techIdx) => (
+                        <span
+                          key={techIdx}
+                          className="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium hover:shadow-elegant transition-all duration-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    <div className="flex gap-3 mt-auto">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white rounded-lg hover:shadow-elegant transition-all duration-300 hover:scale-105 text-sm font-semibold"
                       >
-                        {tech}
-                      </span>
-                    ))}
+                        <Github className="w-4 h-4" />
+                        كود
+                      </a>
+                      {project.demo !== "#" && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 text-sm font-semibold"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          معاينة
+                        </a>
+                      )}
+                    </div>
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white rounded-lg hover:shadow-elegant transition-all duration-300 hover:scale-105"
-                    >
-                      <Github className="w-4 h-4" />
-                      كود
-                    </a>
-                    <a
-                      href={project.demo}
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      معاينة
-                    </a>
-                  </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
