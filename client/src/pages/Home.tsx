@@ -173,30 +173,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 py-12 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="animate-fade-in-up" style={{ animationDelay: "0ms" }}>
-              <div className="text-4xl font-bold mb-2">5+</div>
-              <p className="text-blue-100 text-sm">مشاريع متقدمة</p>
-            </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-              <div className="text-4xl font-bold mb-2">87%</div>
-              <p className="text-blue-100 text-sm">دقة في الذكاء الاصطناعي</p>
-            </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
-              <div className="text-4xl font-bold mb-2">10+</div>
-              <p className="text-blue-100 text-sm">تقنيات مختلفة</p>
-            </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "300ms" }}>
-              <div className="text-4xl font-bold mb-2">2</div>
-              <p className="text-blue-100 text-sm">لغات برمجة رئيسية</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <AboutSection
         profileImage="/manus-storage/1000137522_623d01ba.png"
