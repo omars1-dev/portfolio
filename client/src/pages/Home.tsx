@@ -173,6 +173,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 py-12 text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="animate-fade-in-up" style={{ animationDelay: "0ms" }}>
+              <div className="text-4xl font-bold mb-2">5+</div>
+              <p className="text-blue-100 text-sm">مشاريع متقدمة</p>
+            </div>
+            <div className="animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+              <div className="text-4xl font-bold mb-2">87%</div>
+              <p className="text-blue-100 text-sm">دقة في الذكاء الاصطناعي</p>
+            </div>
+            <div className="animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+              <div className="text-4xl font-bold mb-2">10+</div>
+              <p className="text-blue-100 text-sm">تقنيات مختلفة</p>
+            </div>
+            <div className="animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+              <div className="text-4xl font-bold mb-2">2</div>
+              <p className="text-blue-100 text-sm">لغات برمجة رئيسية</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <AboutSection
         profileImage="/manus-storage/1000137522_623d01ba.png"
@@ -385,11 +409,61 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 dark:bg-slate-950 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-slate-400">
-            © 2024 عمر الزمر. جميع الحقوق محفوظة | تم بناء هذا الموقع باستخدام React و Tailwind CSS
-          </p>
+      <footer className="bg-gradient-to-b from-slate-900 to-slate-950 dark:from-slate-950 dark:to-slate-1000 text-white py-16 border-t border-slate-800 dark:border-slate-700">
+        <div className="container mx-auto px-4">
+          {/* Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* About */}
+            <div className="text-center md:text-right">
+              <h3 className="text-xl font-bold mb-3 text-white">عمر الزمر</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                مهندس برمجيات متخصص في تطوير تطبيقات الويب والذكاء الاصطناعي
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="text-center">
+              <h3 className="text-lg font-semibold mb-4 text-white">الروابط السريعة</h3>
+              <div className="flex flex-col gap-2 text-sm">
+                <a href="#hero" className="text-slate-400 hover:text-blue-400 transition-colors duration-300">الرئيسية</a>
+                <a href="#projects" className="text-slate-400 hover:text-blue-400 transition-colors duration-300">المشاريع</a>
+                <a href="#skills" className="text-slate-400 hover:text-blue-400 transition-colors duration-300">المهارات</a>
+                <a href="#contact" className="text-slate-400 hover:text-blue-400 transition-colors duration-300">التواصل</a>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="text-center md:text-left">
+              <h3 className="text-lg font-semibold mb-4 text-white">تابعني</h3>
+              <div className="flex justify-center md:justify-start gap-4">
+                <a href="https://github.com/omars1-dev" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 text-slate-300 hover:text-white">
+                  <Github className="w-5 h-5" />
+                </a>
+                <a href="https://www.linkedin.com/in/عمر-الزمر-8293ab314/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 text-slate-300 hover:text-white">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="https://www.facebook.com/share/17D7ZNHbPq/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 text-slate-300 hover:text-white">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href="mailto:omaralzomor2030@gmail.com" className="w-10 h-10 rounded-full bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-all duration-300 hover:scale-110 text-slate-300 hover:text-white">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent mb-8"></div>
+
+          {/* Bottom Footer */}
+          <div className="text-center">
+            <p className="text-slate-500 text-sm mb-2">
+              © 2026 عمر الزمر. جميع الحقوق محفوظة
+            </p>
+            <p className="text-slate-600 text-xs">
+              تم بناء هذا الموقع باستخدام <span className="text-blue-400 font-semibold">React 19</span> و <span className="text-blue-400 font-semibold">Tailwind CSS 4</span> مع <span className="text-blue-400 font-semibold">Vite</span>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
