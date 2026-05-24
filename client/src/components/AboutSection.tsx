@@ -55,6 +55,7 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
               <img
                 src={profileImage}
                 alt="عمر الزمر"
+                loading="lazy"
                 className="relative w-64 h-80 rounded-2xl object-cover shadow-elegant-xl border-4 border-blue-100 dark:border-blue-900/30 hover:shadow-elegant-xl transition-all duration-300"
               />
             </div>
@@ -65,6 +66,7 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
                 <img
                   src={universityLogo}
                   alt="جامعة إب"
+                  loading="lazy"
                   className="w-24 h-24 object-contain"
                 />
                 <div className="text-center">

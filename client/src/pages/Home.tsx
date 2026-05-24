@@ -193,6 +193,7 @@ export default function Home() {
                   <img
                     src={universityLogoImg}
                     alt="جامعة إب"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
