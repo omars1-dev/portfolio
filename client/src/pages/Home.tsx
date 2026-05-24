@@ -175,8 +175,8 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection
-        profileImage="/manus-storage/1000137522_20209912.png"
-        universityLogo="/manus-storage/1000137523_5e62e983.png"
+        profileImage="/profile.png"
+        universityLogo="/university-logo.png"
       />
 
       {/* Education Section */}
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center flex-shrink-0 overflow-hidden">
                   <img
-                    src="/manus-storage/1000137523_5e62e983.png"
+                    src="/university-logo.png"
                     alt="جامعة إب"
                     className="w-full h-full object-cover"
                   />
