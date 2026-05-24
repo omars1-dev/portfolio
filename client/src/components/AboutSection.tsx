@@ -70,7 +70,7 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
                 <div className="text-center">
                   <p className="font-bold text-slate-900 dark:text-white">جامعة إب</p>
                   <p className="text-sm text-slate-600 dark:text-slate-400">
-                    كلية العلوم والحاسوب
+                    كلية الحاسبات والعلوم التطبيقية
                   </p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
               </h3>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  أنا مهندس برمجيات شغوف بتطوير تطبيقات الويب الحديثة والأنظمة الإدارية الفعالة. خريج جامعة إب من كلية العلوم والحاسوب بتخصص تقنية معلومات، حيث اكتسبت معرفة عميقة في أساسيات البرمجة وتطوير الويب.
+                  أنا مهندس برمجيات شغوف بتطوير تطبيقات الويب الحديثة والأنظمة الإدارية الفعالة. خريج جامعة إب من كلية الحاسبات والعلوم التطبيقية بتخصص تقنية معلومات، حيث اكتسبت معرفة عميقة في أساسيات البرمجة وتطوير الويب.
                 </p>
                 <p>
                   أتمتع بخبرة عملية في استخدام تقنيات حديثة مثل React.js و Tailwind CSS و Laravel، مع قدرة قوية على حل المشاكل المعقدة وتطبيق أفضل الممارسات البرمجية. أؤمن بأهمية كتابة كود نظيف وسهل الصيانة يتبع معايير الصناعة.

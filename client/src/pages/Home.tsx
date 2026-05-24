@@ -120,7 +120,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 border-4 border-blue-600 flex items-center justify-center shadow-elegant-lg animate-float overflow-hidden">
               <img
-                src="/manus-storage/1000137522_623d01ba.png"
+                src="/manus-storage/1000137522_20209912.png"
                 alt="عمر الزمر"
                 className="w-full h-full object-cover"
               />
@@ -175,8 +175,8 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection
-        profileImage="/manus-storage/1000137522_623d01ba.png"
-        universityLogo="/manus-storage/1000137523_9441093c.png"
+        profileImage="/manus-storage/1000137522_20209912.png"
+        universityLogo="/manus-storage/1000137523_5e62e983.png"
       />
 
       {/* Education Section */}
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center flex-shrink-0 overflow-hidden">
                   <img
-                    src="/manus-storage/1000137523_9441093c.png"
+                    src="/manus-storage/1000137523_5e62e983.png"
                     alt="جامعة إب"
                     className="w-full h-full object-cover"
                   />
