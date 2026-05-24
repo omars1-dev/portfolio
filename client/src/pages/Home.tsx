@@ -25,6 +25,8 @@ import {
   ShoppingCart,
   BarChart3,
 } from "lucide-react";
+import profileImg from "@/assets/profile.png";
+import universityLogoImg from "@/assets/university-logo.png";
 
 /**
  * Design Philosophy: Modern Minimalism with Elegant Touches
@@ -175,8 +177,8 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection
-        profileImage="/profile.png"
-        universityLogo="/university-logo.png"
+        profileImage={profileImg}
+        universityLogo={universityLogoImg}
       />
 
       {/* Education Section */}
@@ -189,7 +191,7 @@ export default function Home() {
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center flex-shrink-0 overflow-hidden">
                   <img
-                    src="/university-logo.png"
+                    src={universityLogoImg}
                     alt="جامعة إب"
                     className="w-full h-full object-cover"
                   />
