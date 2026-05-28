@@ -56,7 +56,7 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
                 src={profileImage}
                 alt="عمر الزمر"
                 loading="lazy"
-                className="relative w-64 h-80 rounded-2xl object-cover shadow-elegant-xl border-4 border-blue-100 dark:border-blue-900/30 hover:shadow-elegant-xl transition-all duration-300"
+                className="relative w-56 h-96 rounded-2xl object-cover shadow-elegant-xl border-4 border-blue-100 dark:border-blue-900/30 hover:shadow-elegant-xl transition-all duration-300"
               />
             </div>
 

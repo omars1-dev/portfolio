@@ -122,8 +122,9 @@ export default function Home() {
           <div className="mb-8">
             <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 border-4 border-blue-600 flex items-center justify-center shadow-elegant-lg animate-float overflow-hidden">
               <img
-                src="/manus-storage/1000137522_20209912.png"
+                src={profileImg}
                 alt="عمر الزمر"
+                loading="eager"
                 className="w-full h-full object-cover"
               />
             </div>
