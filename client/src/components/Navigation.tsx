@@ -55,6 +55,23 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16 rtl">
+          {/* Right Side - Theme Toggle & Mobile Menu */}
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6 text-slate-900 dark:text-white" />
+              ) : (
+                <Menu className="w-6 h-6 text-slate-900 dark:text-white" />
+              )}
+            </button>
+          </div>
+
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white font-bold shadow-lg hover:shadow-elegant transition-all duration-300 hover:scale-105">
@@ -79,23 +96,6 @@ export function Navigation() {
                 <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
-          </div>
-
-          {/* Right Side - Theme Toggle & Mobile Menu */}
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
-            
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
-            >
-              {isOpen ? (
-                <X className="w-6 h-6 text-slate-900 dark:text-white" />
-              ) : (
-                <Menu className="w-6 h-6 text-slate-900 dark:text-white" />
-              )}
-            </button>
           </div>
         </div>
 

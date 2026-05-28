@@ -45,7 +45,7 @@ export default function Home() {
       shortDesc: "تصنيف ذكي للمنتجات الغذائية باستخدام NLP",
       technologies: ["Python", "NLP", "DistilBERT", "Hugging Face"],
       github: "https://github.com/omars1-dev/food-classification-nlp",
-      demo: "https://huggingface.co/omars1-dev/food-classification-nlp",
+      demo: "https://huggingface.co/Omarrs11/food-classifier-model",
       icon: Cpu,
       color: "from-purple-500 to-pink-500",
     },
@@ -55,7 +55,7 @@ export default function Home() {
       shortDesc: "توليد مناظر ثلاثية الأبعاد من صورة واحدة",
       technologies: ["Python", "Deep Learning", "Computer Vision", "Hugging Face"],
       github: "https://github.com/omars1-dev/Neural-Pose-Interpreter",
-      demo: "https://huggingface.co/omars1-dev/neural-pose-interpreter",
+      demo: "https://huggingface.co/Omarrs11/Humanoid-model",
       icon: Palette,
       color: "from-blue-500 to-cyan-500",
     },
@@ -65,7 +65,7 @@ export default function Home() {
       shortDesc: "منصة إعلانات للأجهزة الإلكترونية المستعملة",
       technologies: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
       github: "https://github.com/omars1-dev/Hrag",
-      demo: "https://omars1-dev.github.io/Hrag",
+      demo: "https://omars1-dev.github.io/Hrag/",
       icon: ShoppingCart,
       color: "from-green-500 to-emerald-500",
     },
@@ -208,30 +208,7 @@ export default function Home() {
                   <strong>التخصص:</strong> بكالوريوس تقنية معلومات
                 </p>
               </div>
-              
-              <div>
-                <p className="text-slate-900 dark:text-white font-semibold mb-3">المقررات الدراسية الرئيسية:</p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "الذكاء الاصطناعي",
-                    "تنقيب البيانات",
-                    "هياكل البيانات",
-                    "قواعد البيانات",
-                    "الرسم بالحاسب",
-                    "الشبكات",
-                    "برمجة الويب",
-                    "C# متقدم",
-                    "تحليل وتصميم النظم",
-                  ].map((course, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium hover:shadow-elegant transition-all duration-300"
-                    >
-                      {course}
-                    </span>
-                  ))}
-                </div>
-              </div>
+
             </Card>
           </div>
         </div>
@@ -436,11 +413,8 @@ export default function Home() {
 
           {/* Bottom Footer */}
           <div className="text-center">
-            <p className="text-slate-500 text-sm mb-2">
+            <p className="text-slate-500 text-sm">
               © 2026 عمر الزمر. جميع الحقوق محفوظة
-            </p>
-            <p className="text-slate-600 text-xs">
-              تم بناء هذا الموقع باستخدام <span className="text-blue-400 font-semibold">React 19</span> و <span className="text-blue-400 font-semibold">Tailwind CSS 4</span> مع <span className="text-blue-400 font-semibold">Vite</span>
             </p>
           </div>
         </div>

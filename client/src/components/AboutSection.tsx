@@ -50,13 +50,13 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
           {/* Left - Image and University Logo */}
           <div className="flex flex-col items-center gap-8 animate-fade-in-up">
             {/* Profile Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
+            <div className="relative flex justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-400 rounded-full blur-3xl opacity-40 animate-pulse" style={{width: '280px', height: '280px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}></div>
               <img
                 src={profileImage}
                 alt="عمر الزمر"
                 loading="lazy"
-                className="relative w-64 h-80 rounded-2xl object-cover shadow-elegant-xl border-4 border-blue-100 dark:border-blue-900/30 hover:shadow-elegant-xl transition-all duration-300"
+                className="relative w-72 h-72 rounded-full object-cover shadow-elegant-xl border-4 border-blue-100 dark:border-blue-900/30 hover:shadow-elegant-xl transition-all duration-300"
               />
             </div>
 
@@ -88,13 +88,13 @@ export function AboutSection({ profileImage, universityLogo }: AboutSectionProps
               </h3>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  أنا مهندس برمجيات شغوف بتطوير تطبيقات الويب الحديثة والأنظمة الإدارية الفعالة. خريج جامعة إب من كلية الحاسبات والعلوم التطبيقية بتخصص تقنية معلومات، حيث اكتسبت معرفة عميقة في أساسيات البرمجة وتطوير الويب.
+                  أنا مهندس برمجيات متخصص في تطوير تطبيقات الويب الحديثة وبناء الأنظمة الإدارية عالية الكفاءة، مع شغف حقيقي بابتكار حلول تقنية تجمع بين الأداء الممتاز وتجربة المستخدم المميزة. حاصل على درجة البكالوريوس في تقنية المعلومات من جامعة إب – كلية الحاسبات والعلوم التطبيقية، حيث اكتسبت أساساً قوياً في علوم الحاسوب وتطوير البرمجيات.
                 </p>
                 <p>
-                  أتمتع بخبرة عملية في استخدام تقنيات حديثة مثل React.js و Tailwind CSS و Laravel، مع قدرة قوية على حل المشاكل المعقدة وتطبيق أفضل الممارسات البرمجية. أؤمن بأهمية كتابة كود نظيف وسهل الصيانة يتبع معايير الصناعة.
+                  أمتلك خبرة عملية في تطوير واجهات وتطبيقات الويب باستخدام تقنيات حديثة مثل React.js و Tailwind CSS و Laravel، مع اهتمام كبير بكتابة كود نظيف، قابل للتوسع، وسهل الصيانة وفق أفضل الممارسات والمعايير البرمجية الحديثة.
                 </p>
                 <p>
-                  أنا متحمس للتعلم المستمر والبقاء على اطلاع بأحدث التطورات التكنولوجية. أحب العمل في بيئات تعاونية وأستمتع بتبادل المعرفة والأفكار مع الفريق لتحقيق أهداف مشتركة.
+                  أتميز بقدرة قوية على تحليل المشكلات وإيجاد حلول فعالة وعملية، كما أؤمن بأهمية العمل الجماعي والتعاون في بناء منتجات رقمية ناجحة. أسعى دائماً إلى تطوير مهاراتي التقنية ومواكبة أحدث التقنيات والاتجاهات في عالم تطوير البرمجيات من أجل تقديم حلول مبتكرة ذات قيمة حقيقية.
                 </p>
               </div>
             </div>
